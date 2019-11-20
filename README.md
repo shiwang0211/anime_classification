@@ -38,11 +38,6 @@ This personal project aims to develop a **image classification model** to predic
 
 
 - ***Loss function***: *MultiLabelSoftMarginLoss* is used as the loss function of this multi-label classification problem.
-  - For one class:
-  - $$F = \frac{\text{precision} \times \text{recall}}{\text{precision} + \text{recall}}$$
-
-  - For multiple classes:
-  - $$F_{weighted} = \frac{1}{\sum_{l \in L} \left|\hat{y}_l\right|} \sum_{l \in L} \left|\hat{y}_l\right| F(y_l, \hat{y}_l)$$
 
 - ***Evaluation metric***: the *weighted F1-score* is used as the evaluation metric to select best network and hyperparameters.
 
@@ -50,6 +45,7 @@ This personal project aims to develop a **image classification model** to predic
 - ***Monitoring Tool***: The model performance is monitored by utilizing *TensorBoard*.
 
 *The model is still under improvement*
+
 <img src="https://drive.google.com/uc?export=view&id=1x0uBE1pBdOQEmnjFfnzPvbfeFd4WbJwA" width="500">
 
 # Part III: Model Development
