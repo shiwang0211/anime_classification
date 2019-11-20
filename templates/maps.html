@@ -1,0 +1,10 @@
+{% extends "index.html" %}
+{% block body %}
+
+{% if mymap %}
+{{mymap.js}}
+{% endif %}
+
+{{mymap.html}}
+
+{% endblock %}

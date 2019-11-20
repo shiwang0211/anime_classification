@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  {% block head %}
+  {% endblock %}
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Website - Shi</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="static/simple-sidebar.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading"><a href="/homepage">Homepage</a></div>
+      <div class="list-group list-group-flush">
+        <a href="/photos" class="list-group-item list-group-item-action bg-light">Who I am</a>
+        <a href="/maps" class="list-group-item list-group-item-action bg-light">Where I am</a>
+
+        <a href="/" class="list-group-item list-group-item-action bg-light dropdown">
+          <i class="fa fa-caret-down"></i>
+          Personal Projects
+        </a>
+        <div class="dropdown-container">
+          <a href="/anime" class="list-group-item list-group-item-action bg-light">Anime Genre Prediction</a>
+        </div>
+
+        <!-- <a href="/" class="list-group-item list-group-item-action bg-light dropdown">
+          <i class="fa fa-caret-down"></i>
+          Learning Notes
+        </a>
+        <div class="dropdown-container">
+          <a href="/deep_learning" class="list-group-item list-group-item-action bg-light">Deep Learning</a>
+          <a href="/deep_learning" class="list-group-item list-group-item-action bg-light">Recommendation System</a>
+          <a href="/deep_learning" class="list-group-item list-group-item-action bg-light">Natural Language Processing</a>
+        </div> -->
+
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom">
+        <button class="btn btn-primary" id="menu-toggle">Toggle</button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/shiwang0211" target="_blank">Github</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.dropbox.com/s/b2ezmhbwp3cgdx4/Resume_ShiWang_1010_.pdf?dl=0" target="_blank">Resume</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li> -->
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+
+      {% block body %}
+      {% endblock %}
+
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="static/vendor/jquery/jquery.min.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+  <script>
+  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+  var dropdown = document.getElementsByClassName("list-group-item list-group-item-action bg-light dropdown");
+  var i;
+
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function(event) {
+    event.preventDefault();
+    // event.stopPropagation();
+    // this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    var this_status = dropdownContent.style.display
+
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].nextElementSibling.style.display = "none"
+    }
+
+    var dropdownContent = this.nextElementSibling;
+    if (this_status === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+
+  });
+}
+  </script>
+
+</body>
+
+</html>

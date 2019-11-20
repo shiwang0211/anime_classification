@@ -1,0 +1,46 @@
+{% extends "index.html" %}
+
+
+{% block head %}
+<style>
+
+
+</style>
+
+{% endblock %}
+
+{% block body %}
+<br>
+<!-- <ul>Deep Learning Projects/Notes
+  <li>Simple Examples</li>
+    <ul>
+      <li>Number</li>
+
+    </ul>
+</ul> -->
+
+<nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-dl" role="tab" aria-controls="nav-home" aria-selected="true">Deep Learning</a>
+    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-rc" role="tab" aria-controls="nav-profile" aria-selected="false">Recommendation System</a>
+    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-nlp" role="tab" aria-controls="nav-contact" aria-selected="false">Natural Language Processing</a>
+  </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-dl" role="tabpanel" aria-labelledby="nav-home-tab">
+    <iframe src="/static/Concepts_Notes.html" style="height:1000px;width:100%"></iframe>
+  </div>
+  <div class="tab-pane fade" id="nav-rc" role="tabpanel" aria-labelledby="nav-profile-tab">
+    <iframe src="/static/Recommender_System.html" style="height:1000px;width:100%"></iframe>
+  </div>
+  <div class="tab-pane fade" id="nav-nlp" role="tabpanel" aria-labelledby="nav-contact-tab">
+   <iframe src="/static/Concept Notes.html" style="height:1000px;width:100%"></iframe>
+  </div>
+</div>
+
+
+
+
+
+
+{% endblock %}

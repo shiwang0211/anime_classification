@@ -1,0 +1,9 @@
+runtime: python37
+service: shi-wang
+instance_class: F2
+
+handlers:
+- url: /static
+  static_dir: static
+- url: /.*
+  script: auto

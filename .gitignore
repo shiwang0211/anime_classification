@@ -1,0 +1,9 @@
+/env
+/script
+/model
+notes.txt
+/static
+*.json
+config.py
+/__pycache__
+checkpoint
