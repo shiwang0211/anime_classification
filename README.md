@@ -6,7 +6,7 @@ This personal project aims to develop a **image classification model** to predic
 - The network is coded in PyTorch and implemented transfer learning based on pre-trained ResNet18.
 - The model is deployed as a Cloud Function and served on a Flask App at [https://shi-wang-dot-euphoric-oath-172818.appspot.com/anime](https://shi-wang-dot-euphoric-oath-172818.appspot.com/anime).
 
-# [Part I: Web Scraping](https://github.com/shiwang0211/anime_classification/blob/master/notebooks/Web%20Scraping.ipynb)
+# [Part I: Web Scraping](https://drive.google.com/open?id=1kkbBwR9xUn99p9BSWLV6jQ3TTMmovvWW)
 
 <img src="https://drive.google.com/uc?export=view&id=1nuLhgJWfApgHJNkBPpBrpu3b48n_Z-cC" width="600">
 
@@ -15,7 +15,7 @@ This personal project aims to develop a **image classification model** to predic
 - The poster of each anime is downloaded as a figure and saved at a Google Drive folder.
 - The summary table including anime genre and info is saved as a csv file.
 
-# [Part II: Model Development](https://github.com/shiwang0211/anime_classification/blob/master/notebooks/Model%20Development.ipynb)
+# [Part II: Model Development](https://drive.google.com/open?id=1UyZtcORjIV4pWlilYxlSdTm9CPybB3hD)
 
 - This part aims to develop a model to predict the genre of an anime based only on the poster of the anime. The problem is formulated as a multi-label classification problem as each anime could have multiple genres.
 
@@ -48,7 +48,7 @@ This personal project aims to develop a **image classification model** to predic
 
 <img src="https://drive.google.com/uc?export=view&id=1x0uBE1pBdOQEmnjFfnzPvbfeFd4WbJwA" width="500">
 
-# [Part III: Model Development](https://github.com/shiwang0211/anime_classification/blob/master/notebooks/Model%20Deployment.ipynb)
+# [Part III: Model Development](https://drive.google.com/open?id=1-EJAcL6p8TItZIdZXgcJRLrt-7UnapQC)
 
 <img src="https://drive.google.com/uc?export=view&id=1FpWmkTyTDls-qZqE_JwG6w4LvnPP-tlN" width="500">
 
