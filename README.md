@@ -6,6 +6,8 @@ This personal project aims to develop a **image classification model** to predic
 - The network is coded in PyTorch and implemented transfer learning based on pre-trained ResNet18.
 - The model is deployed as a Cloud Function and served on a Flask App at [https://shi-wang-dot-euphoric-oath-172818.appspot.com/anime](https://shi-wang-dot-euphoric-oath-172818.appspot.com/anime).
 
+<img src="./notebooks/website_screenshot.png" width="1000">
+
 # [Part I: Web Scraping](https://drive.google.com/open?id=1kkbBwR9xUn99p9BSWLV6jQ3TTMmovvWW)
 
 <img src="./notebooks/Data Preparation.png" width="600">
