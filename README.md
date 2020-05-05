@@ -33,7 +33,7 @@ This personal project aims to develop a **image classification model** to predic
   - Transfer Learning with ResNet18, and only the weights in the last FC layers are updated during training.
 
 
-<img src="/notebooks/Data Training.png" width="700">
+<img src="/notebooks/Model Training.png" width="700">
 
 
 
