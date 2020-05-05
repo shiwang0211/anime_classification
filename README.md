@@ -48,7 +48,7 @@ This personal project aims to develop a **image classification model** to predic
 
 <img src="https://drive.google.com/uc?export=view&id=1x0uBE1pBdOQEmnjFfnzPvbfeFd4WbJwA" width="500">
 
-# [Part III: Model Development](https://drive.google.com/open?id=1-EJAcL6p8TItZIdZXgcJRLrt-7UnapQC)
+# [Part III: Model Deployment](https://drive.google.com/open?id=1-EJAcL6p8TItZIdZXgcJRLrt-7UnapQC)
 
 <img src="https://drive.google.com/uc?export=view&id=1FpWmkTyTDls-qZqE_JwG6w4LvnPP-tlN" width="500">
 
