@@ -8,7 +8,7 @@ This personal project aims to develop a **image classification model** to predic
 
 # [Part I: Web Scraping](https://drive.google.com/open?id=1kkbBwR9xUn99p9BSWLV6jQ3TTMmovvWW)
 
-<img src="https://drive.google.com/uc?export=view&id=1nuLhgJWfApgHJNkBPpBrpu3b48n_Z-cC" width="600">
+<img src="./notebooks/Data Preparation.png" width="600">
 
 - The first step is to extract anime data from [anime.net](https://myanimelist.net/anime/), including anime name, genre, rating, etc.
 - The web scraping is implemented through the well-known *BeautifulSoup* package.
@@ -24,7 +24,7 @@ This personal project aims to develop a **image classification model** to predic
   - Resize to 256X256
   - Normalize with mean=0.5 and std=0.5 for each of the three channels.
 
-<img src="https://drive.google.com/uc?export=view&id=1-1Bt9ufVu4oBnej4YB4qp7Kd7YzJh6I2" width="750">
+<img src="/notebooks/Data Preprocessing.png" width="750">
 
 - ***Programming Language***: *PyTorch* is used as the language to write and train the neural network.
 
@@ -33,7 +33,7 @@ This personal project aims to develop a **image classification model** to predic
   - Transfer Learning with ResNet18, and only the weights in the last FC layers are updated during training.
 
 
-<img src="https://drive.google.com/uc?export=view&id=17m8l0F3Yx1fMbNSp5mkI2sGKnnLDT64m" width="700">
+<img src="/notebooks/Data Training.png" width="700">
 
 
 
@@ -46,11 +46,11 @@ This personal project aims to develop a **image classification model** to predic
 
 *The model is still under improvement*
 
-<img src="https://drive.google.com/uc?export=view&id=1x0uBE1pBdOQEmnjFfnzPvbfeFd4WbJwA" width="500">
+<img src="/notebooks/tensor_board.png" width="500">
 
 # [Part III: Model Deployment](https://drive.google.com/open?id=1-EJAcL6p8TItZIdZXgcJRLrt-7UnapQC)
 
-<img src="https://drive.google.com/uc?export=view&id=1FpWmkTyTDls-qZqE_JwG6w4LvnPP-tlN" width="500">
+<img src="/notebooks/Model Deployment.png" width="500">
 
 - This part aims to deploy the trained deep learning model as a Cloud Function on Google Cloud Platform. The deployment requires the input of two files:
   - *requirement.txt*: which specifies the dependencies that need to be installed
